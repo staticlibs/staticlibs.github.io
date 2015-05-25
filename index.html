@@ -1,14 +1,116 @@
-<h1 id="staticlibs-a-collection-of-libraries-for-c-">Staticlibs - a collection of libraries for C++</h1>
-<p><a href="https://github.com/staticlibs">Staticlibs</a> is a collection of C and C++ libraries built using CMake.</p>
-<p>The following platforms are supported:</p>
-<ul>
-<li>Linux x86/x86_64 with GCC 4.7+ or Clang 3.4+</li>
-<li>Mac OS X with Clang 6.0+</li>
-<li>iOS with Clang 6.0+</li>
-<li>Android with GCC 4.8+</li>
-<li>Raspberry Pi with GCC 4.7+</li>
-<li><p>Windows x86/x86_64 with Visual Studio 2013</p>
-<p>A number of existing well-known libraries (marked with &quot;external_&quot; prefix) are built<br>using CMake wrapper scripts with the same toolchain support as other libraries.</p>
-<p>External libraries are published under their original (permissive, non-copyleft)<br>licenses, all other libraries and scripts are published under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>.</p>
-</li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Staticlibs C++ libraries</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img class="navbar-brand" src="logo.png" alt="Logo">
+          <a class="navbar-brand" href="http://staticlibs.net">Staticlibs</a>          
+        </div>
+        <!--div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div--><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Staticlibs</h1>
+        <p>Collection of portable libraries for C++ built using CMake for Linux, Windows, Android, iOS and Raspberry platforms
+        <p>Contains a number of well-known widely used libraries like cURL or SQLite
+        with uniform CMake build interface and a number of brand-new C++11 libraries for common tasks like reflection or lazy operations on ranges
+        <p><a class="btn btn-primary btn-lg" href="https://github.com/staticlibs?tab=repositories" role="button">View on GitHub &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Dependency tracking</h2>
+          <p>Dependency tracking using CMake and Git submodules</p>
+          <p>Build all the dependencies from sources using the same compiler settings, link into a single static library</p>
+          <p>Number of concise CMake macros to simplify dependencies, testing and docs generation </p>
+          <p><a class="btn btn-default" href="https://github.com/staticlibs/cmake/tree/master/macros" role="button">View on GitHub &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Custom toolchains</h2>
+          <p>Explicit specification of the toolchain for top level project, also applied to all the dependencies </p>
+          <p>Number of predefined toolchains for desktop and mobile platforms</p>
+          <p>Easy to modify toolchain or to add a new one</p>
+          <p><a class="btn btn-default" href="https://github.com/staticlibs/cmake/tree/master/toolchains" role="button">View on GitHub &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Uniform build settings</h2>
+          <p>Build your modules using clean CMake interface</p>
+          <p>Use the same build interface with classic C libraries as submodules of your project</p>
+          <p>Build with the same interface for Windows with MSVC 2013 and for embedded platforms with GCC 4.7+</p>
+          <p><a class="btn btn-default" href="https://github.com/staticlibs/staticlib_serialization/blob/master/CMakeLists.txt" role="button">View on GitHub &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>alex@staticlibs.net, 2015</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+
