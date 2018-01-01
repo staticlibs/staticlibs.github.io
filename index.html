@@ -1,78 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico">
+        <title>Staticlibs C++ libraries</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
 
-    <title>Staticlibs C++ libraries</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-    <!-- Latest compiled and minified JavaScript -->
-    
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <img class="navbar-brand" src="logo.png" alt="Logo">
-          <a class="navbar-brand" href="http://staticlibs.net">Staticlibs</a>          
-        </div>
-        <!--div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <div class="btn-toolbar pull-right">
+                    <div class="btn-group">
+                        <a href="https://github.com/staticlibs" target="_blank" class="btn btn-primary btn-lg">View on GitHub</a>
+                    </div>
+                </div>
+                <h1><img src="logo.png"></img>&nbsp;Staticlibs C++ libraries</h1>
             </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
+            <!--h3 class="panel-title">Collection of portable libraries for C++ built with CMake for Linux, Windows, MacOS and Android</h3-->
+
+            <!--div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">About</h3>
+                    </div>
+                    <div class="panel-body">
+                    </div>
+                </div>
             </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div--><!--/.navbar-collapse -->
-      </div>
-    </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Staticlibs</h1>
-        <p>Collection of portable libraries for C++ built using CMake for Linux, Windows, Android, iOS and Raspberry platforms
-        <p>Contains a number of well-known widely used libraries like cURL or ICU 
-        with uniform CMake build interface and a number of brand-new C++11 libraries for common tasks like serializarion or lazy operations on ranges
-        <p><a class="btn btn-primary btn-lg" href="https://github.com/staticlibs?tab=repositories" role="button">View on GitHub &raquo;</a></p>
-      </div>
-    </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">CMake and pkg-config</h3>
+                    </div>
+                    <div class="panel-body">
+                    </div>
+                </div>
+            </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Cross-compilation</h3>
+                    </div>
+                    <div class="panel-body">
+                    </div>
+                </div>
+            </div-->
+
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Portable C++11 libraries</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Linux/MacOS</th>
+                                    <th>Windows</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- staticlib_compress -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_compress" target="_blank"><b>staticlib_compress</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_compress" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_compress.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-compress" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_compress?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_concurrent -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_concurrent" target="_blank"><b>staticlib_concurrent</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_concurrent" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_concurrent.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-concurrent" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_concurrent?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_config -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_config" target="_blank"><b>staticlib_config</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_config" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_config.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-config" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_config?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_cron -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_cron" target="_blank"><b>staticlib_cron</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_cron" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_cron.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-cron" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_cron?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_crypto -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_crypto" target="_blank"><b>staticlib_crypto</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_crypto" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_crypto.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-crypto" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_crypto?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_endian -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_endian" target="_blank"><b>staticlib_endian</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_endian" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_endian.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-endian" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_endian?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_http -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_http" target="_blank"><b>staticlib_http</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_http" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_http.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-http" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_http?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_io -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_io" target="_blank"><b>staticlib_io</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_io" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_io.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-io" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_io?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_jni -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_jni" target="_blank"><b>staticlib_jni</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_jni" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_jni.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-jni" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_jni?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_json -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_json" target="_blank"><b>staticlib_json</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_json" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_json.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-json" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_json?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_mustache -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_mustache" target="_blank"><b>staticlib_mustache</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_mustache" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_mustache.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-mustache" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_mustache?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_orm -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_orm" target="_blank"><b>staticlib_orm</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_orm" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_orm.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-orm" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_orm?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_pimpl -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_pimpl" target="_blank"><b>staticlib_pimpl</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_pimpl" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_pimpl.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-pimpl" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_pimpl?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_pion -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_pion" target="_blank"><b>staticlib_pion</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_pion" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_pion.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-pion" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_pion?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_ranges -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_ranges" target="_blank"><b>staticlib_ranges</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_ranges" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_ranges.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-ranges" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_ranges?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_support -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_support" target="_blank"><b>staticlib_support</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_support" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_support.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-support" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_support?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_tinydir -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_tinydir" target="_blank"><b>staticlib_tinydir</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_tinydir" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_tinydir.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-tinydir" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_tinydir?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_unzip -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_unzip" target="_blank"><b>staticlib_unzip</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_unzip" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_unzip.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-unzip" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_unzip?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_utils -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_utils" target="_blank"><b>staticlib_utils</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/staticlib_utils" target="_blank"><img src="https://travis-ci.org/staticlibs/staticlib_utils.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-utils" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_utils?svg=true"></img></a></td>
+                                </tr>
+                                <!-- staticlib_winservice -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/staticlib_winservice" target="_blank"><b>staticlib_winservice</b></a></td>
+                                    <td><p class="text-center">N/A</p></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/staticlib-winservice" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/staticlib_winservice?svg=true"></img></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Libraries from CentOS built with CMake</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Linux/MacOS</th>
+                                    <th>Windows</th>
+                                    <th>Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- external_asio -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/external_asio" target="_blank"><b>ASIO</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/external_asio" target="_blank"><img src="https://travis-ci.org/staticlibs/external_asio.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/external-asio" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/external_asio?svg=true"></img></a></td>
+                                    <td>header-only</td>
+                                </tr>
+                                <!-- external_curl -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/external_curl" target="_blank"><b>cURL</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/external_curl" target="_blank"><img src="https://travis-ci.org/staticlibs/external_curl.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/external-curl" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/external_curl?svg=true"></img></a></td>
+                                    <td>only HTTP(S) backend</td>
+                                </tr>
+                                <!-- external_duktape -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/external_duktape" target="_blank"><b>Duktape</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/external_duktape" target="_blank"><img src="https://travis-ci.org/staticlibs/external_duktape.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/external-duktape" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/external_duktape?svg=true"></img></a></td>
+                                    <td>with C++ exceptions support</td>
+                                </tr>
+                                <!-- external_hpdf -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/external_hpdf" target="_blank"><b>Haru</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/external_hpdf" target="_blank"><img src="https://travis-ci.org/staticlibs/external_hpdf.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/external-hpdf" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/external_hpdf?svg=true"></img></a></td>
+                                    <td>also known as HPDF</td>
+                                </tr>
+                                <!-- external_jansson -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/external_jansson" target="_blank"><b>Jansson</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/external_jansson" target="_blank"><img src="https://travis-ci.org/staticlibs/external_jansson.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/external-jansson" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/external_jansson?svg=true"></img></a></td>
+                                    <td></td>
+                                </tr>
+                                <!-- external_libpng -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/external_libpng" target="_blank"><b>libpng</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/external_libpng" target="_blank"><img src="https://travis-ci.org/staticlibs/external_libpng.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/external-libpng" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/external_libpng?svg=true"></img></a></td>
+                                    <td></td>
+                                </tr>
+                                <!-- external_libpq -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/external_libpq" target="_blank"><b>libpq</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/external_libpq" target="_blank"><img src="https://travis-ci.org/staticlibs/external_libpq.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/external-libpq" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/external_libpq?svg=true"></img></a></td>
+                                    <td></td>
+                                </tr>
+                                <!-- external_log4cplus -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/external_log4cplus" target="_blank"><b>log4cplus</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/external_log4cplus" target="_blank"><img src="https://travis-ci.org/staticlibs/external_log4cplus.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/external-log4cplus" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/external_log4cplus?svg=true"></img></a></td>
+                                    <td>without wchar_t API</td>
+                                </tr>
+                                <!-- external_openssl -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/external_openssl" target="_blank"><b>OpenSSL</b></a></td>
+                                    <td><p class="text-center">N/A</p></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/external-openssl" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/external_openssl?svg=true"></img></a></td>
+                                    <td>only for Windows and Android</td>
+                                </tr>
+                                <!-- external_popt -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/external_popt" target="_blank"><b>Popt</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/external_popt" target="_blank"><img src="https://travis-ci.org/staticlibs/external_popt.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/external-popt" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/external_popt?svg=true"></img></a></td>
+                                    <td></td>
+                                </tr>
+                                <!-- external_soci -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/external_soci" target="_blank"><b>SOCI</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/external_soci" target="_blank"><img src="https://travis-ci.org/staticlibs/external_soci.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/external-soci" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/external_soci?svg=true"></img></a></td>
+                                    <td>with PostgreSQL and SQLite backends</td>
+                                </tr>
+                                <!-- external_sqlite -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/external_sqlite" target="_blank"><b>SQLite</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/external_sqlite" target="_blank"><img src="https://travis-ci.org/staticlibs/external_sqlite.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/external-sqlite" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/external_sqlite?svg=true"></img></a></td>
+                                    <td></td>
+                                </tr>
+                                <!-- external_zlib -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/external_zlib" target="_blank"><b>zlib</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/external_zlib" target="_blank"><img src="https://travis-ci.org/staticlibs/external_zlib.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/external-zlib" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/external_zlib?svg=true"></img></a></td>
+                                    <td></td>
+                                </tr>
+                                <!-- external_xz -->
+                                <tr>
+                                    <td><a href="https://github.com/staticlibs/external_xz" target="_blank"><b>XZ</b></a></td>
+                                    <td><a href="https://travis-ci.org/staticlibs/external_xz" target="_blank"><img src="https://travis-ci.org/staticlibs/external_xz.svg?branch=master"></img></a></td>
+                                    <td><a href="https://ci.appveyor.com/project/staticlibs/external-xz" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/github/staticlibs/external_xz?svg=true"></img></a></td>
+                                    <td>also known as liblzma</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /.container -->
+        <footer>
+            <div class="container">
+                <p class="text-muted">alex@staticlibs.net, 2018</p>
+            </div>
+        </footer>
+    </body>
+</html>
+
+
+
+
+
+      <!--div class="row">
         <div class="col-md-4">
           <h2>Dependency tracking</h2>
           <p>Dependency tracking using CMake and Pkg-config</p>
@@ -94,23 +347,4 @@
           <p>Build with the same interface for Windows with MSVC 2013 and for embedded platforms with GCC 4.7+</p>
           <p><a class="btn btn-default" href="https://github.com/staticlibs/staticlib_serialization/blob/master/CMakeLists.txt" role="button">View on GitHub &raquo;</a></p>
         </div>
-      </div>
-
-      <hr>
-
-      <footer>
-        <p>alex@staticlibs.net, 2016</p>
-      </footer>
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
-</html>
-
+      </div-->
